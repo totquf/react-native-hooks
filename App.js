@@ -1,16 +1,19 @@
-import { View, Text } from "react-native";
+import React from "react";
+import styled from "styled-components";
+import Counter from "./src/components/Counter";
 
-export default function App() {
+const Container = styled.SafeAreaView`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  `
+const App = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Universal React with Expo</Text>
-      <Text>dddd</Text>
-    </View>
-  );
+    <Container>
+      <Counter />
+    </Container>
+  )
 }
+
+export default App;
