@@ -14,7 +14,11 @@ const Counter = () => {
             <StyledText>Count: {count}</StyledText>
             <Button
                 title="+"
-                onPress={() => setCount(count + 1)}
+                onPress={() => {
+                    setCount(count => count + 1)
+                    setCount(count => count + 1)
+                    console.log(`count: ${count}`);
+                }}
             />
             <Button
                 title="-"
