@@ -28,7 +28,7 @@ export const useFetch = url => {
 
             //try에서 실행한 문장(url받아와서 json변환)에서 에러가 발생했을 경우 error상태 변경
             } catch (error) {
-                setError(error.message)
+                setError(error)
 
             }
         }

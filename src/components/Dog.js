@@ -12,7 +12,7 @@ const ErrorMessage = styled.Text`
     color: #e74c3c;
     `
 
-const URL = "http://dㅇog.ceo/api/breeds/image/random";
+const URL = "http://dog.ceo/api/breeds/image/random";
 const Dog = () => {
     const { data, error } = useFetch(URL);
 
