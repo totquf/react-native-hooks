@@ -12,13 +12,13 @@ const ErrorMessage = styled.Text`
     color: #e74c3c;
     `
 
-const URL = "http://dog.ceo/api/breeds/image/random";
+const URL = "http://dㅇog.ceo/api/breeds/image/random";
 const Dog = () => {
     const { data, error } = useFetch(URL);
 
     return (
         <>
-            <StyledImage source={data?.message ? { uri: data.message } : null} />
+            <StyledImage source={data?.message ? { url: data.message } : null} />
             <ErrorMessage>{error?.message}</ErrorMessage>
         </>
     )
