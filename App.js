@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Form from "./src/components/Form";
 import Button from "./src/components/Button";
 import Length from "./src/components/Length";
+import Dog from "./src/components/Dog";
 
 const Container = styled.SafeAreaView`
   flex: 1;
@@ -16,7 +17,7 @@ const App = () => {
 
   return (
     <Container>
-      <Length/>
+      <Dog/>
     </Container>
   )
 }
