@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 export const useFetch = url => {
-
     const [data, setData] = useState(null)
     const [error, setError] = useState(null)
 
@@ -31,6 +30,7 @@ export const useFetch = url => {
                 setError(error)
             }
         }
+        fetchData()
     },[])  
 
     return {data,error}
