@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import Form from "./src/components/Form";
 import Button from "./src/components/Button";
+import Length from "./src/components/Length";
 
 const Container = styled.SafeAreaView`
   flex: 1;
@@ -15,11 +16,7 @@ const App = () => {
 
   return (
     <Container>
-      <Button
-        title={isVisible ? 'Hide' : 'Show'}
-        onPress={() => setIsVisible(prev => !prev)}
-      />
-      {isVisible && <Form/>}
+      <Length/>
     </Container>
   )
 }
